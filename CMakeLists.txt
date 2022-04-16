@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(lane_following)
+project(EE346_Lab4)
 
 add_definitions(-std=c++11)
 
@@ -20,7 +20,11 @@ catkin_package()
 include_directories(include ${catkin_INCLUDE_DIRS})
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-catkin_install_python(PROGRAMS scripts/lane_following.py
+catkin_install_python(PROGRAMS 
+  scripts/lane_following_part1.py
+  scripts/lane_following_part2.py
+  scripts/lane_following_part3.py
+  scripts/lane_following.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

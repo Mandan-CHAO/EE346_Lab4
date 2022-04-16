@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>lane_following</name>
+  <name>EE346_Lab4</name>
   <version>0.0.0</version>
   <description>The Lane-Follower-TurtleBot package</description>
 

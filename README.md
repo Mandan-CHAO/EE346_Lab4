@@ -23,7 +23,7 @@ It contains gazebo simulation model and control code for turtlebot3 burger.
    roslaunch EE346_Lab4 race_track.launch 
 
 ## 3. chmod lane following python code
-   cd ~/catkin_ws/src/lane_following/scripts/
+   cd ~/catkin_ws/src/EE346_Lab4/scripts/
    
    chmod +x lane_following_part1.py
    

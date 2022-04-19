@@ -16,11 +16,11 @@ It contains gazebo simulation model and control code for turtlebot3 burger.
 
    
 ## 2. Launch the gazebo map
-   export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/catkin_ws/src/lane_following/models
+   export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/catkin_ws/src/EE346_Lab4/models
    
    source ~/catkin_ws/devel/setup.bash
    
-   roslaunch lane_following race_track.launch 
+   roslaunch EE346_Lab4 race_track.launch 
 
 ## 3. chmod lane following python code
    cd ~/catkin_ws/src/lane_following/scripts/
@@ -38,10 +38,10 @@ It contains gazebo simulation model and control code for turtlebot3 burger.
    source devel/setup.bash
    
 ### part1
-   rosrun lane_following lane_following_part1.py
+   rosrun EE346_Lab4 lane_following_part1.py
    
 ### part2
-   rosrun lane_following lane_following_part2.py
+   rosrun EE346_Lab4 lane_following_part2.py
    
 ### part3
-   rosrun lane_following lane_following_part3.py
+   rosrun EE346_Lab4 lane_following_part3.py

@@ -31,14 +31,17 @@ class Follower:
                                                     parameters=aruco_para)
         if corners:
             (rvecs, tvecs, _) = cv2.aruco.estimatePoseSingleMarkers(corners, mlen, K, distortion_para)
-            if tvecs[0][0][0] > 0.09 and tvecs[0][0][0] < 0.1:
+            if tvecs[0][0][-1] > 0.9 and tvecs[0][0][-1] < 1:
                 self.twist.linear.x = 0  ##set the velocity to zero to stop
                 self.twist.angular.z = 0
                 self.cmd_vel_pub.publish(self.twist)
                 print('Stop!!!!!')
                 time.sleep(10)
                 print('Now gooooo!!')
-                time.sleep(2)
+                self.twist.linear.x = 0.2
+                self.twist.angular.z = 0
+                self.cmd_vel_pub.publish(self.twist)
+                time.sleep(0.5)
 
             corners = None
 
